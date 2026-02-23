@@ -7,7 +7,7 @@ public enum LengthUnit
     YARD,
     CENTIMETER
 }
-
+//UC6 1ft + 12in 2 FEET
 public class QuantityLength
 {
     private double value;
@@ -35,10 +35,10 @@ public class QuantityLength
 
         return 0;
     }
-
     public static double Convert(double value, LengthUnit from, LengthUnit to)
     {
         double inFeet = ToFeet(value, from);
+
         if (to == LengthUnit.FEET)
             return inFeet;
 
@@ -53,7 +53,6 @@ public class QuantityLength
 
         return 0;
     }
-
     public override bool Equals(object obj)
     {
         if (obj == null)
@@ -64,8 +63,28 @@ public class QuantityLength
 
         QuantityLength other = (QuantityLength)obj;
 
-        return ToFeet(this.value, this.unit) ==
-               ToFeet(other.value, other.unit);
+        double thisFeet = ToFeet(this.value, this.unit);
+        double otherFeet = ToFeet(other.value, other.unit);
+
+        return thisFeet == otherFeet;
+    }
+
+    public QuantityLength Add(QuantityLength other)
+    {
+        if (other == null)
+            throw new ArgumentException("Null value");
+        double thisFeet = ToFeet(this.value, this.unit);
+        double otherFeet = ToFeet(other.value, other.unit);
+        double totalFeet = thisFeet + otherFeet;
+
+        double finalValue = Convert(totalFeet, LengthUnit.FEET, this.unit);
+
+        return new QuantityLength(finalValue, this.unit);
+    }
+
+    public override string ToString()
+    {
+        return value + " " + unit;
     }
 }
 
