@@ -18,23 +18,38 @@ public class QuantityLength
         this.value = value;
         this.unit = unit;
     }
-    private double ConvertToFeet()
+
+    private static double ToFeet(double value, LengthUnit unit)
     {
-        if (unit == LengthUnit.FEET)//5 feet=5 feet
+        if (unit == LengthUnit.FEET)
             return value;
 
-        if (unit == LengthUnit.INCH)//60/12 feet
-            return value / 12.0;
+        if (unit == LengthUnit.INCH)
+            return value / 12;
 
-        if (unit == LengthUnit.YARD)//3*3 feet
-            return value * 3.0;
+        if (unit == LengthUnit.YARD)
+            return value * 3;
 
         if (unit == LengthUnit.CENTIMETER)
-        {
-            // 1 cm = 0.3937 inch and inch/12=feet
-            double inches = value * 0.393701;
-            return inches / 12.0;
-        }
+            return (value * 0.393701) / 12;
+
+        return 0;
+    }
+
+    public static double Convert(double value, LengthUnit from, LengthUnit to)
+    {
+        double inFeet = ToFeet(value, from);
+        if (to == LengthUnit.FEET)
+            return inFeet;
+
+        if (to == LengthUnit.INCH)
+            return inFeet * 12;
+
+        if (to == LengthUnit.YARD)
+            return inFeet / 3;
+
+        if (to == LengthUnit.CENTIMETER)
+            return (inFeet * 12) / 0.393701;
 
         return 0;
     }
@@ -49,6 +64,8 @@ public class QuantityLength
 
         QuantityLength other = (QuantityLength)obj;
 
-        return this.ConvertToFeet() == other.ConvertToFeet();
+        return ToFeet(this.value, this.unit) ==
+               ToFeet(other.value, other.unit);
     }
 }
+
