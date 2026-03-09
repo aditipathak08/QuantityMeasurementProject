@@ -1,24 +1,35 @@
 ﻿using System;
 
-class Program
+// Generic class that works for any unit
+public class Quantity<U> where U : IMeasurable
 {
-    static void Main()
+    private double value;
+    private U unit;
+
+    public Quantity(double value, U unit)
     {
-        // Create weight objects
-        QuantityWeight w1 = new QuantityWeight(1, WeightUnit.KILOGRAM);
-        QuantityWeight w2 = new QuantityWeight(1000, WeightUnit.GRAM);
+        this.value = value;
+        this.unit = unit;
+    }
 
-        // Check equality
-        Console.WriteLine(w1.Equals(w2));
-        // Output: true
+    public override bool Equals(object obj)
+    {
+        if (obj == null)
+            return false;
 
-        // Convert 1 kg to grams
-        QuantityWeight converted = w1.ConvertTo(WeightUnit.GRAM);
+        Quantity<U> other = obj as Quantity<U>;
 
-        // Add weights
-        QuantityWeight sum = w1.Add(w2);
+        if (other == null)
+            return false;
 
-        Console.WriteLine("Converted: " + converted);
-        Console.WriteLine("Sum: " + sum);
+        double v1 = unit.convertToBaseUnit(value);
+        double v2 = other.unit.convertToBaseUnit(other.value);
+
+        return v1 == v2;
+    }
+
+    public override string ToString()
+    {
+        return $"Quantity({value}, {unit.getUnitName()})";
     }
 }
