@@ -1,102 +1,51 @@
 using System;
 
-public enum LengthUnit
+// Enum to store weight units
+public enum WeightUnit
 {
-    FEET,
-    INCH,
-    YARD,
-    CENTIMETER
+    KILOGRAM,
+    GRAM,
+    POUND
 }
 
-public class QuantityLength
+// Helper class to handle unit conversion
+public static class WeightUnitHelper
 {
-    private double value;
-    private LengthUnit unit;
-
-    public QuantityLength(double value, LengthUnit unit)
+    // Convert any unit to the base unit (kilogram)
+    public static double ToKilogram(double value, WeightUnit unit)
     {
-        this.value = value;
-        this.unit = unit;
-    }
-
-    private static double ToFeet(double value, LengthUnit unit)
-    {
-        if (unit == LengthUnit.FEET)
+        // If unit is already kilogram
+        if (unit == WeightUnit.KILOGRAM)
             return value;
 
-        if (unit == LengthUnit.INCH)
-            return value / 12;
+        // Convert gram to kilogram
+        // 1000 g = 1 kg
+        if (unit == WeightUnit.GRAM)
+            return value * 0.001;
 
-        if (unit == LengthUnit.YARD)
-            return value * 3;
+        // Convert pound to kilogram
+        // 1 lb ≈ 0.453592 kg
+        if (unit == WeightUnit.POUND)
+            return value * 0.453592;
 
-        if (unit == LengthUnit.CENTIMETER)
-            return (value * 0.393701) / 12;
-
-        return 0;
+        return value;
     }
 
-    public static double Convert(double value, LengthUnit from, LengthUnit to)
+    // Convert kilogram to another unit
+    public static double FromKilogram(double kgValue, WeightUnit targetUnit)
     {
-        double inFeet = ToFeet(value, from);
+        // If target is kilogram
+        if (targetUnit == WeightUnit.KILOGRAM)
+            return kgValue;
 
-        if (to == LengthUnit.FEET)
-            return inFeet;
+        // Convert kg to gram
+        if (targetUnit == WeightUnit.GRAM)
+            return kgValue * 1000;
 
-        if (to == LengthUnit.INCH)
-            return inFeet * 12;
+        // Convert kg to pound
+        if (targetUnit == WeightUnit.POUND)
+            return kgValue / 0.453592;
 
-        if (to == LengthUnit.YARD)
-            return inFeet / 3;
-
-        if (to == LengthUnit.CENTIMETER)
-            return (inFeet * 12) / 0.393701;
-
-        return 0;
-    }
-
-    public QuantityLength Add(QuantityLength other)
-    {
-        double totalFeet =
-            ToFeet(this.value, this.unit) +
-            ToFeet(other.value, other.unit);
-
-        double result = Convert(totalFeet, LengthUnit.FEET, this.unit);
-
-        return new QuantityLength(result, this.unit);
-    }
-
-    public QuantityLength Add(QuantityLength other, LengthUnit targetUnit)
-    {
-        if (other == null)
-            throw new ArgumentException("Null value");
-
-        double totalFeet =
-            ToFeet(this.value, this.unit) +
-            ToFeet(other.value, other.unit);
-
-        double result = Convert(totalFeet, LengthUnit.FEET, targetUnit);
-
-        return new QuantityLength(result, targetUnit);
-    }
-
-    public override bool Equals(object obj)
-    {
-        if (obj == null)
-            return false;
-
-        if (!(obj is QuantityLength))
-            return false;
-
-        QuantityLength other = (QuantityLength)obj;
-
-        return ToFeet(this.value, this.unit) ==
-               ToFeet(other.value, other.unit);
-    }
-
-    public override string ToString()
-    {
-        return value + " " + unit;
+        return kgValue;
     }
 }
-
