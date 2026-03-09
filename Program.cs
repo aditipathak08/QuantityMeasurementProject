@@ -1,35 +1,35 @@
 ﻿using System;
 
-// Generic class that works for any unit
-public class Quantity<U> where U : IMeasurable
+class Program
 {
-    private double value;
-    private U unit;
-
-    public Quantity(double value, U unit)
+    static void Main(string[] args)
     {
-        this.value = value;
-        this.unit = unit;
-    }
+        // length example
+        Quantity<LengthUnit> q1 = new Quantity<LengthUnit>(10, LengthUnit.FEET);
+        Quantity<LengthUnit> q2 = new Quantity<LengthUnit>(6, LengthUnit.INCHES);
 
-    public override bool Equals(object obj)
-    {
-        if (obj == null)
-            return false;
+        // subtraction
+        var sub = q1.subtract(q2);
+        Console.WriteLine("Subtract: " + sub);
 
-        Quantity<U> other = obj as Quantity<U>;
+        // subtraction with target unit
+        var sub2 = q1.subtract(q2, LengthUnit.INCHES);
+        Console.WriteLine("Subtract in inches: " + sub2);
 
-        if (other == null)
-            return false;
+        // division
+        double ratio = q1.divide(q2);
+        Console.WriteLine("Division: " + ratio);
 
-        double v1 = unit.convertToBaseUnit(value);
-        double v2 = other.unit.convertToBaseUnit(other.value);
+        // weight example
+        Quantity<Weight> w1 = new Quantity<Weight>(10, Weight.KILOGRAM);
+        Quantity<Weight>w2 = new Quantity<Weight>(5000, Weight.GRAM);
 
-        return v1 == v2;
-    }
+        Console.WriteLine("Weight subtract: " + w1.subtract(w2));
 
-    public override string ToString()
-    {
-        return $"Quantity({value}, {unit.getUnitName()})";
+        // volume example
+        Quantity<VolumeUnit> v1 = new Quantity<VolumeUnit>(5, VolumeUnit.LITRE);
+        Quantity<VolumeUnit> v2 = new Quantity<VolumeUnit>(500, VolumeUnit.MILLILITRE);
+
+        Console.WriteLine("Volume subtract: " + v1.subtract(v2));
     }
 }

@@ -1,9 +1,9 @@
-// class for length units
-public class LengthUnit : IMeasurable
+// class for weight units
+public class Weight : IMeasurable
 {
     private double factor;
 
-    public LengthUnit(double factor)
+    public Weight(double factor)
     {
         this.factor = factor;
     }
@@ -18,7 +18,6 @@ public class LengthUnit : IMeasurable
         return value / factor;
     }
 
-    // units
-    public static LengthUnit FEET = new LengthUnit(1.0);
-    public static LengthUnit INCHES = new LengthUnit(1.0 / 12);
+    public static Weight KILOGRAM = new Weight(1.0);
+    public static Weight GRAM = new Weight(0.001);
 }
