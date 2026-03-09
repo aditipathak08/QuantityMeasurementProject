@@ -1,4 +1,4 @@
-// class for volume units
+// Volume units class
 public class VolumeUnit : IMeasurable
 {
     private double factor;
@@ -18,6 +18,7 @@ public class VolumeUnit : IMeasurable
         return value / factor;
     }
 
-    public static VolumeUnit LITRE = new VolumeUnit(1.0);
+    public static VolumeUnit LITRE = new VolumeUnit(1);
     public static VolumeUnit MILLILITRE = new VolumeUnit(0.001);
+    public static VolumeUnit GALLON = new VolumeUnit(3.78541);
 }

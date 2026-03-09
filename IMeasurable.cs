@@ -1,9 +1,9 @@
-// Interface for measurement units
+// Interface for all measurement units
 public interface IMeasurable
 {
-    // convert value to base unit
+    // Convert value to base unit
     double convertToBaseUnit(double value);
 
-    // convert value from base unit
+    // Convert base unit value to this unit
     double convertFromBaseUnit(double value);
 }

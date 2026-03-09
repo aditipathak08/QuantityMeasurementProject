@@ -4,74 +4,59 @@ public class Quantity<T> where T : IMeasurable
     private double value;
     private T unit;
 
-    // constructor
     public Quantity(double value, T unit)
     {
         this.value = value;
         this.unit = unit;
     }
 
-    // check equality
-    public override bool Equals(object obj)
+    // Central method for arithmetic (DRY principle)
+    private double performBaseArithmetic(Quantity<T> other, string operation)
     {
-        Quantity<T> other = obj as Quantity<T>;
-
-        if (other == null)
-            return false;
-
         // convert both values to base unit
         double v1 = unit.convertToBaseUnit(value);
         double v2 = other.unit.convertToBaseUnit(other.value);
 
-        return v1 == v2;
+        if (operation == "ADD")
+            return v1 + v2;
+
+        if (operation == "SUBTRACT")
+            return v1 - v2;
+
+        if (operation == "DIVIDE")
+        {
+            if (v2 == 0)
+                throw new System.ArithmeticException("Cannot divide by zero");
+
+            return v1 / v2;
+        }
+
+        return 0;
     }
 
-    // -----------------------------
-    // SUBTRACTION
-    // -----------------------------
-
-    // subtract and return result in same unit
-    public Quantity<T> subtract(Quantity<T> other)
+    // ADD
+    public Quantity<T> Add(Quantity<T> other)
     {
-        // convert both to base unit
-        double v1 = unit.convertToBaseUnit(value);
-        double v2 = other.unit.convertToBaseUnit(other.value);
+        double baseResult = performBaseArithmetic(other, "ADD");
 
-        // subtract
-        double resultBase = v1 - v2;
+        double finalValue = unit.convertFromBaseUnit(baseResult);
 
-        // convert result back to this unit
-        double result = unit.convertFromBaseUnit(resultBase);
-
-        return new Quantity<T>(result, unit);
+        return new Quantity<T>(finalValue, unit);
     }
 
-    // subtract and return in target unit
-    public Quantity<T> subtract(Quantity<T> other, T targetUnit)
+    // SUBTRACT
+    public Quantity<T> Subtract(Quantity<T> other)
     {
-        double v1 = unit.convertToBaseUnit(value);
-        double v2 = other.unit.convertToBaseUnit(other.value);
+        double baseResult = performBaseArithmetic(other, "SUBTRACT");
 
-        double resultBase = v1 - v2;
+        double finalValue = unit.convertFromBaseUnit(baseResult);
 
-        double result = targetUnit.convertFromBaseUnit(resultBase);
-
-        return new Quantity<T>(result, targetUnit);
+        return new Quantity<T>(finalValue, unit);
     }
 
-    // -----------------------------
-    // DIVISION
-    // -----------------------------
-
-    // divide two quantities
-    public double divide(Quantity<T> other)
+    // DIVIDE
+    public double Divide(Quantity<T> other)
     {
-        double v1 = unit.convertToBaseUnit(value);
-        double v2 = other.unit.convertToBaseUnit(other.value);
-
-        if (v2 == 0)
-            throw new System.ArithmeticException("Cannot divide by zero");
-
-        return v1 / v2;
+        return performBaseArithmetic(other, "DIVIDE");
     }
 }

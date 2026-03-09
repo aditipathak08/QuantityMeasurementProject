@@ -1,5 +1,5 @@
-// class for weight units
-public class Weight : IMeasurable
+// Weight units class
+public class Weight: IMeasurable
 {
     private double factor;
 
@@ -18,6 +18,6 @@ public class Weight : IMeasurable
         return value / factor;
     }
 
-    public static Weight KILOGRAM = new Weight(1.0);
+    public static Weight KILOGRAM = new Weight(1);
     public static Weight GRAM = new Weight(0.001);
 }

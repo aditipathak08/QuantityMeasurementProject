@@ -1,4 +1,4 @@
-// class for length units
+// Length units class
 public class LengthUnit : IMeasurable
 {
     private double factor;
@@ -18,7 +18,6 @@ public class LengthUnit : IMeasurable
         return value / factor;
     }
 
-    // units
-    public static LengthUnit FEET = new LengthUnit(1.0);
+    public static LengthUnit FEET = new LengthUnit(1);
     public static LengthUnit INCHES = new LengthUnit(1.0 / 12);
 }
