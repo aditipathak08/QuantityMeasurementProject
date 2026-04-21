@@ -14,7 +14,7 @@ namespace QuantityMeasurementApp.API.Middleware
     /// </summary>
     public class ExceptionMiddleware
     {
-        private readonly RequestDelegate _next;
+        private readonly RequestDelegate _next;//no delegate=short circuit rd store address ofnext middleware
         private readonly ILogger<ExceptionMiddleware> _logger;
 
         /// <summary>

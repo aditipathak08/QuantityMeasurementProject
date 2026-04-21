@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj": {}
+    "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj": {}
   },
   "projects": {
-    "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj": {
+    "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj",
         "projectName": "QuantityMeasurementApp.API",
-        "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj",
+        "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.API\\QuantityMeasurementApp.API.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.API\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -30,20 +30,20 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj": {
-                "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj"
+              "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj": {
+                "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj"
               },
-              "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj": {
-                "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj"
+              "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj": {
+                "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj"
               },
-              "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj": {
-                "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj"
+              "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj": {
+                "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj"
               },
-              "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Service\\QuantityMeasurementApp.Service.csproj": {
-                "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Service\\QuantityMeasurementApp.Service.csproj"
+              "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Service\\QuantityMeasurementApp.Service.csproj": {
+                "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Service\\QuantityMeasurementApp.Service.csproj"
               },
-              "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj": {
-                "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj"
+              "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj": {
+                "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj"
               }
             }
           }
@@ -68,14 +68,6 @@
               "target": "Package",
               "version": "[10.0.5, )"
             },
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[10.0.3, )"
-            },
-            "Microsoft.Data.SqlClient": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[10.0.5, )"
@@ -90,17 +82,13 @@
               "target": "Package",
               "version": "[10.0.5, )"
             },
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.6.22, )"
+            },
             "NLog.Web.AspNetCore": {
               "target": "Package",
               "version": "[6.1.2, )"
-            },
-            "NUnit": {
-              "target": "Package",
-              "version": "[4.5.1, )"
-            },
-            "RabbitMQ.Client": {
-              "target": "Package",
-              "version": "[6.8.1, )"
             },
             "RestSharp": {
               "target": "Package",
@@ -112,7 +100,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[10.1.5, )"
+              "version": "[6.6.2, )"
             }
           },
           "imports": [
@@ -552,14 +540,14 @@
         }
       }
     },
-    "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj": {
+    "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj",
         "projectName": "QuantityMeasurementApp.Exceptions",
-        "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj",
+        "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Exceptions\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Exceptions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -889,14 +877,14 @@
         }
       }
     },
-    "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj": {
+    "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj",
         "projectName": "QuantityMeasurementApp.Models",
-        "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj",
+        "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Models\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1226,14 +1214,14 @@
         }
       }
     },
-    "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj": {
+    "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj",
         "projectName": "QuantityMeasurementApp.Repository",
-        "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj",
+        "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Repository\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1252,14 +1240,14 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj": {
-                "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj"
+              "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj": {
+                "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj"
               },
-              "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj": {
-                "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj"
+              "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj": {
+                "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj"
               },
-              "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj": {
-                "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj"
+              "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj": {
+                "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj"
               }
             }
           }
@@ -1280,9 +1268,13 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
-            "Microsoft.Data.SqlClient": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.1.4, )"
+              "version": "[10.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[10.0.5, )"
             }
           },
           "imports": [
@@ -1579,14 +1571,14 @@
         }
       }
     },
-    "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Service\\QuantityMeasurementApp.Service.csproj": {
+    "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Service\\QuantityMeasurementApp.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Service\\QuantityMeasurementApp.Service.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Service\\QuantityMeasurementApp.Service.csproj",
         "projectName": "QuantityMeasurementApp.Service",
-        "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Service\\QuantityMeasurementApp.Service.csproj",
+        "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Service\\QuantityMeasurementApp.Service.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Service\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1605,17 +1597,17 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj": {
-                "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj"
+              "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj": {
+                "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Exceptions\\QuantityMeasurementApp.Exceptions.csproj"
               },
-              "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj": {
-                "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj"
+              "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj": {
+                "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Models\\QuantityMeasurementApp.Models.csproj"
               },
-              "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj": {
-                "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj"
+              "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj": {
+                "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Repository\\QuantityMeasurementApp.Repository.csproj"
               },
-              "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj": {
-                "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj"
+              "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj": {
+                "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj"
               }
             }
           }
@@ -1639,10 +1631,6 @@
             "Microsoft.Extensions.Hosting.Abstractions": {
               "target": "Package",
               "version": "[10.0.5, )"
-            },
-            "RabbitMQ.Client": {
-              "target": "Package",
-              "version": "[6.8.1, )"
             }
           },
           "imports": [
@@ -1939,14 +1927,14 @@
         }
       }
     },
-    "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj": {
+    "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj",
         "projectName": "QuantityMeasurementApp.Utilities",
-        "projectPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj",
+        "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\QuantityMeasurementApp\\QuantityMeasurementApp.Utilities\\obj\\",
+        "outputPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1983,10 +1971,6 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "dependencies": {
-            "Microsoft.Data.SqlClient": {
-              "target": "Package",
-              "version": "[6.1.4, )"
-            },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
               "version": "[10.0.5, )"
@@ -1995,9 +1979,17 @@
               "target": "Package",
               "version": "[10.0.5, )"
             },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.6.0, )"
+            },
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.12.8, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.6.0, )"
             }
           },
           "imports": [

@@ -1,0 +1,11 @@
+2026-04-16 14:36:26.6986 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-04-16 14:36:26.6986 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-04-16 14:36:26.7081 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.1.5033. Product version: 6.1.1+0e83056311dfcda0493d7db60b7191d0927eb5da. GlobalAssemblyCache: False
+2026-04-16 14:36:26.7256 Info Configuration initialized: TargetNames=logfile, logconsole, ConfigItems=21, AutoReload=true, FilePath=C:\Users\HP\Downloads\FB\FB\Backend\microservices\AuthService\bin\Debug\net10.0\Logging\NLog.config
+2026-04-16 14:37:47.2178 Info LogFactory shutting down ...
+2026-04-16 14:37:47.2178 Info Closing old configuration.
+2026-04-16 14:37:47.2347 Info LogFactory shutdown completed.
+2026-04-16 14:46:25.8362 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2026-04-16 14:46:25.8659 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2026-04-16 14:46:25.8861 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.1.1.5033. Product version: 6.1.1+0e83056311dfcda0493d7db60b7191d0927eb5da. GlobalAssemblyCache: False
+2026-04-16 14:46:26.0692 Info Configuration initialized: TargetNames=logfile, logconsole, ConfigItems=21, AutoReload=true, FilePath=C:\Users\HP\Downloads\FB\FB\Backend\microservices\AuthService\bin\Debug\net10.0\Logging\NLog.config

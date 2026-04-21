@@ -4,8 +4,8 @@ using QuantityMeasurementApp.Service;
 
 namespace QuantityMeasurementApp.API.Controllers
 {
-    [ApiController]
-    [Route("api/auth")]
+    [ApiController]//tell class is an api controller
+    [Route("api/auth")]//base url becomes this
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _service;
@@ -17,6 +17,7 @@ namespace QuantityMeasurementApp.API.Controllers
 
         // 🔐 REGISTER API
         [HttpPost("register")]
+        //post to send data to the server
         public IActionResult Register([FromBody] RegisterRequest request)
         {
             if (request == null || request.Name == null || request.Email == null || request.Password == null)
