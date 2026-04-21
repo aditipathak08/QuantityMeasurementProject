@@ -874,11 +874,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj",
+      "projectUniqueName": "D:\\QuantityMeasurementProject\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj",
       "projectName": "QuantityMeasurementApp.Utilities",
-      "projectPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj",
+      "projectPath": "D:\\QuantityMeasurementProject\\QuantityMeasurementApp.Utilities\\QuantityMeasurementApp.Utilities.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Downloads\\FB\\FB\\Backend\\QuantityMeasurementApp.Utilities\\obj\\",
+      "outputPath": "D:\\QuantityMeasurementProject\\QuantityMeasurementApp.Utilities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
